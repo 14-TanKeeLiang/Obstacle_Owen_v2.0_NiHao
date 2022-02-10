@@ -7,11 +7,18 @@ public class DoorTrigger : MonoBehaviour
     [SerializeField]
     GameObject door;
 
+    bool isOpened = false;
+
     void OnTriggerEnter(Collider col)
     {
-        
-        door.transform.position += new Vector3(0, 4, 0);
+        if(!isOpened)
+        {
 
-        Debug.Log("Touch");
+            isOpened = true;
+            door.transform.position += new Vector3(0, 4, 0);
+
+            Debug.Log("Touch");
+        }
+        
     }
 }
