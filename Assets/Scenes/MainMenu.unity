@@ -422,8 +422,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.9, y: 69.3}
-  m_SizeDelta: {x: 268.83453, y: 81.22516}
+  m_AnchoredPosition: {x: 18.9, y: 72.4}
+  m_SizeDelta: {x: 368.33368, y: 81.22516}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &317617126
 MonoBehaviour:
@@ -457,7 +457,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Coin Collector
+  m_Text: Obstacle Owen v2.0
 --- !u!222 &317617127
 CanvasRenderer:
   m_ObjectHideFlags: 0
