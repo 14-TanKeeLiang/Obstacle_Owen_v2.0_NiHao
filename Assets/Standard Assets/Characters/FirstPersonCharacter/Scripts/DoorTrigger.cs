@@ -11,13 +11,16 @@ public class DoorTrigger : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        if(!isOpened)
+        if (col.gameObject.tag == "Cube")
         {
+            if (!isOpened)
+            {
 
-            isOpened = true;
-            door.transform.position += new Vector3(0, 4, 0);
+                isOpened = true;
+                door.transform.position += new Vector3(0, 4, 0);
 
-            Debug.Log("Touch");
+                Debug.Log("Touch");
+            }
         }
         
     }
