@@ -63,26 +63,9 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Coin") && buildIn == 2)
+        if (other.gameObject.CompareTag("Win"))
         {
-            audioSource.PlayOneShot(audioClips[0]);
-            coinCollected += 1;
-            coinCollectedTxt.text = "Coin Collected: " + coinCollected + "/6";
-            Destroy(other.gameObject);
-        }
-        if (other.gameObject.CompareTag("Coin") && buildIn == 3)
-        {
-            audioSource.PlayOneShot(audioClips[0]);
-            coinCollected += 1;
-            coinCollectedTxt.text = "Coin Collected: " + coinCollected + "/10";
-            Destroy(other.gameObject);
-        }
-        if (other.gameObject.CompareTag("Coin") && buildIn == 4)
-        {
-            audioSource.PlayOneShot(audioClips[0]);
-            coinCollected += 1;
-            coinCollectedTxt.text = "Coin Collected: " + coinCollected + "/14";
-            Destroy(other.gameObject);
+            SceneManager.LoadScene("GameWin");
         }
         if (other.gameObject.CompareTag("Water"))
         {
