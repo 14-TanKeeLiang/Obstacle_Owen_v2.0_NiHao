@@ -22,41 +22,12 @@ public class PlayerController : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         buildIn = SceneManager.GetActiveScene().buildIndex;
-
-        if(buildIn == 2)
-        {
-            timer = 40;
-        }
-        if (buildIn == 3)
-        {
-            timer = 60;
-        }
-        if (buildIn == 4)
-        {
-            timer = 80;
-        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (coinCollected == 6 && buildIn == 2 || coinCollected == 10 && buildIn == 3 || coinCollected == 14 && buildIn == 4)
-        {
-            SceneManager.LoadScene("GameWin");
-        }
-        if(timer <= 0)
-        {
-            SceneManager.LoadScene("GameLose");
-        }
-
-        if(timer > 0)
-        {
-            timer -= Time.deltaTime;
-        }
-        else
-        {
-            timer = 0;
-        }
+        timer += Time.deltaTime;
 
         DisplayTime(timer);
     }

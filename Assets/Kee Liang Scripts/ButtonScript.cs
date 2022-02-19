@@ -42,22 +42,6 @@ public class ButtonScript : MonoBehaviour
         SceneManager.LoadScene("HardLevel");
     }
 
-    public void RestartBtn()
-    {
-        if (currentLevel == 1)
-        {
-            SceneManager.LoadScene("EasyLevel");
-        }
-        if (currentLevel == 2)
-        {
-            SceneManager.LoadScene("MediumLevel");
-        }
-        if (currentLevel == 3)
-        {
-            SceneManager.LoadScene("HardLevel");
-        }
-    }
-
     public void MainMenuBtn()
     {
         currentLevel = 0;
