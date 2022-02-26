@@ -24,6 +24,11 @@ public class ButtonScript : MonoBehaviour
         SceneManager.LoadScene("LevelSelection");
     }
 
+    public void InstructionBtn()
+    {
+        SceneManager.LoadScene("InstructionsMenu");
+    }
+
     public void EasyLevel()
     {
         currentLevel = 1;

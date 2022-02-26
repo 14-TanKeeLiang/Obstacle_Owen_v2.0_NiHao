@@ -2,11 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CoinScript : MonoBehaviour
+public class ObstacleMovements : MonoBehaviour
 {
-
-    private float rotationSpeed = 0.5f;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +13,6 @@ public class CoinScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0, rotationSpeed, 0, Space.World);
+        
     }
 }
