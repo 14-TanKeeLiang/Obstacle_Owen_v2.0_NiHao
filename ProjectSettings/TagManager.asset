@@ -6,8 +6,9 @@ TagManager:
   tags:
   - Fire
   - Water
-  - Coin
   - Win
+  - Cube
+  - Obstacle
   layers:
   - Default
   - TransparentFX

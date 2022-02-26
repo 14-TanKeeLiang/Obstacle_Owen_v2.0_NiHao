@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
         {
             SceneManager.LoadScene("GameWin");
         }
-        if (other.gameObject.CompareTag("Water"))
+        if (other.gameObject.CompareTag("Water") || other.gameObject.CompareTag("Obstacle"))
         {
             SceneManager.LoadScene("GameLose");
         }
